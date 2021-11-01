@@ -11,4 +11,9 @@ app.use('/order/:id', (req, res) => {
     res.send
 })
 
+app.use (req, res, next) => {
+    console.log(req);
+}
+
+
 app.listen(3000);
